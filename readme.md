@@ -1,7 +1,7 @@
 # Authentication Demo
 
 This repo simulates a server-side web app with an existing user database
-using ASP.NET Core Identity and ***also*** allowing logging with an external identity
+using ASP.NET Core Identity and ***also*** allowing logging in with an external identity
 provider like [Duende IdentityServer](https://duendesoftware.com/products/identityserver).
 
 It also supports deep-linking with authorization and uses conditional challenge logic.
