@@ -1,0 +1,19 @@
+﻿@page
+@model AuthenticationDemo.Pages.MyCompaniesModel
+@{
+}
+
+<h1>My Companies</h1>
+
+@if (!string.IsNullOrEmpty((string?)TempData["AuthWarning"]))
+{
+    <h2>@TempData["AuthWarning"]</h2>
+}
+
+The companies I have access to are:
+<ul>
+    @foreach (var comp in Model.Companies)
+    {
+        <li><strong><a asp-page="CompanyDetails" asp-route-cid="@comp">@comp</a></strong></li>
+    }
+</ul>
